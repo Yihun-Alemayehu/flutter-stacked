@@ -10,7 +10,37 @@ class HomeView extends StatelessWidget {
     return ViewModelBuilder.reactive(
       builder: (context, model, child) => Scaffold(
         body: Center(
-          child: Text(model.title),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                model.title,
+                style: const TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                model.counter.toString(),
+                style: const TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              MaterialButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  color: Colors.blueAccent,
+                  child: const Icon(
+                    Icons.add,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {
+                    model.updateCounter();
+                  })
+            ],
+          ),
         ),
       ),
       viewModelBuilder: () => HomeViewModel(),
