@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-import 'package:stacked_arch/UI/home/home_view_model.dart';
+import 'package:stacked_arch/UI/views/home/home_view_model.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});

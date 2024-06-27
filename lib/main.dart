@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stacked_arch/UI/home/home_view.dart';
+import 'package:stacked_arch/UI/views/home/home_view.dart';
 
 void main() {
   runApp(const MyApp());

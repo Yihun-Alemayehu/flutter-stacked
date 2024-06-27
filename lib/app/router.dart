@@ -1,0 +1,4 @@
+// @MaterialAutoRouter()
+class $Router {
+
+}
