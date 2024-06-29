@@ -15,14 +15,14 @@ class StartupView extends StatelessWidget {
             children: [
               const Text(
                 'model.title',
-                style: const TextStyle(
+                style:  TextStyle(
                   fontSize: 40,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               const Text(
                 'model.counter.toString()',
-                style: const TextStyle(
+                style:  TextStyle(
                   fontSize: 40,
                   fontWeight: FontWeight.bold,
                 ),
